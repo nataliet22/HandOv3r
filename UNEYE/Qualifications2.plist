@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Primary Education</key>
+	<array>
+		<string>CPR Certification </string>
+		<string>First Aid Certification</string>
+		<string>Bachelor of Education in Early Childhood</string>
+		<string>Early Childhood Education</string>
+		<string>Certificate or Diploma in Children&apos;s Services</string>
+		<string>Certificate III and IV in Disability</string>
+		<string>Higher School Certificate</string>
+		<string>Victorian Certificate of Education/Victorian Certificate of Applied Learning</string>
+		<string>Queensland Certificate of Education</string>
+		<string>South Australian Certificate of Education</string>
+		<string>Western Australian Certificate of Education</string>
+		<string>Tasmanian Certificate of Education</string>
+		<string>Australian Capital Territory Year 12 Certificate</string>
+		<string>Northern Territory Certificate of Education</string>
+		<string>P1 Licence</string>
+		<string>P2 Licence</string>
+		<string>Full Licence</string>
+		<string>Accredited Tutor</string>
+		<string>Non-Smoker</string>
+		<string>Own Car</string>
+		<string>Parent/Client References</string>
+		<string>Housework Cleaning</string>
+		<string>Registered Carer</string>
+		<string>Professional Athlete</string>
+	</array>
+</dict>
+</plist>

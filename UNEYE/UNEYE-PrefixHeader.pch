@@ -1,0 +1,168 @@
+//
+//  UNEYE-PrefixHeader.pch
+//  UNEYE
+//
+//  Created by Satya Kumar on 10/03/16.
+//  Copyright © 2016 Satya Kumar. All rights reserved.
+//
+
+#ifndef UNEYE_PrefixHeader_pch
+#define UNEYE_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* UNEYE_PrefixHeader_pch */
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#endif
+
+#import "AppDelegate.h"
+#import "Reachability.h"
+#import "MyTextField.h"
+#import "CommonUtility.h"
+#import "ETMenuViewController.h"
+#import "IQWebService.h"
+#import "BaseViewController.h"
+#import "CameraControllerHandler.h"
+#import <MobileCoreServices/UTCoreTypes.h>
+#import <AVFoundation/AVFoundation.h>
+#import <MobileCoreServices/UTCoreTypes.h>
+#import "IQDropDownTextField.h"
+#import "UIImage+ResizeImage.h"
+#import "AsyncImageView.h"
+#import "JTCalendar.h"
+#import "LoginViewController.h"
+#import "CalenderPopUpViewController.h"
+
+
+//--- Defined AppDelegate Object ---
+#define kAppDelegete (AppDelegate*)[[UIApplication sharedApplication]delegate]
+
+//--- Defined Custom Alerts ---
+#define kCustomAlertWithParamAndTarget(title,msg,target) [[[UIAlertView alloc] initWithTitle:title message:msg delegate:target cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil] show]
+#define kCustomAlertWithParamAndTargetDelegate(title,msg,target) [[[UIAlertView alloc] initWithTitle:title message:msg delegate:target cancelButtonTitle:@"Cancel" otherButtonTitles:@"Ok", nil] show]
+
+#define IS_WIDESCREEN ([[UIScreen mainScreen] bounds].size.height == 568)
+
+
+#define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+
+#define IS_IPHONE_5_IOS7 (IS_IPHONE && [[UIScreen mainScreen] bounds].size.height == 568.0f)
+#define IS_IPHONE_6_IOS7 (IS_IPHONE && [[UIScreen mainScreen] bounds].size.height == 667.0f)
+#define IS_IPHONE_6P_IOS7 (IS_IPHONE && [[UIScreen mainScreen] bounds].size.height == 736.0f)
+#define IS_IPHONE_4_AND_OLDER_IOS7 (IS_IPHONE && [[UIScreen mainScreen] bounds].size.height < 568.0f)
+#define IS_IPHONE_SE_IOS7 (IS_IPHONE && [[UIScreen mainScreen] bounds].size.height == 568.0f)
+
+#define IS_IPHONE_5_IOS8 (IS_IPHONE && ([[UIScreen mainScreen] nativeBounds].size.height/[[UIScreen mainScreen] nativeScale]) == 568.0f)
+#define IS_IPHONE_6_IOS8 (IS_IPHONE && ([[UIScreen mainScreen] nativeBounds].size.height/[[UIScreen mainScreen] nativeScale]) == 667.0f)
+#define IS_IPHONE_6P_IOS8 (IS_IPHONE && ([[UIScreen mainScreen] nativeBounds].size.height/[[UIScreen mainScreen] nativeScale]) == 736.0f)
+#define IS_IPHONE_4_AND_OLDER_IOS8 (IS_IPHONE && ([[UIScreen mainScreen] nativeBounds].size.height/[[UIScreen mainScreen] nativeScale]) < 568.0f)
+#define IS_IPHONE_SE_IOS8 (IS_IPHONE && ([[UIScreen mainScreen] nativeBounds].size.height/[[UIScreen mainScreen] nativeScale]) == 568.0f)
+
+#define IS_IPHONE_5 ( ( [ [ UIScreen mainScreen ] respondsToSelector: @selector( nativeBounds ) ] ) ? IS_IPHONE_5_IOS8 : IS_IPHONE_5_IOS7 )
+#define IS_IPHONE_6 ( ( [ [ UIScreen mainScreen ] respondsToSelector: @selector( nativeBounds ) ] ) ? IS_IPHONE_6_IOS8 : IS_IPHONE_6_IOS7 )
+#define IS_IPHONE_6P ( ( [ [ UIScreen mainScreen ] respondsToSelector: @selector( nativeBounds ) ] ) ? IS_IPHONE_6P_IOS8 : IS_IPHONE_6P_IOS7 )
+#define IS_IPHONE_4_AND_OLDER ( ( [ [ UIScreen mainScreen ] respondsToSelector: @selector( nativeBounds ) ] ) ? IS_IPHONE_4_AND_OLDER_IOS8 : IS_IPHONE_4_AND_OLDER_IOS7 )
+#define IS_IPHONE_SE ( ( [ [ UIScreen mainScreen ] respondsToSelector: @selector( nativeBounds ) ] ) ? IS_IPHONE_SE_IOS8 : IS_IPHONE_SE_IOS7 )
+
+
+//---- Keys ----
+//--------------
+
+//--- SignUp ---
+#define userRole                        @"field_role"
+#define TypeOfCare                      @"field_typeofcare"
+#define About                           @"field_about[und][0][value]"
+#define AboutKey                        @"field_about"
+#define userNameKey                     @"field_name"
+#define userEmailKey                    @"mail"
+#define userProfileImageKey             @"field_image"
+#define userIntroImageKey               @"field_intro_media"
+#define familyMemberNameKey             @"name"
+#define familyMemberAgeKey              @"age"
+#define familyMemberRequirementsKey     @"requirements"
+#define femilymember                    @"family_member"
+#define field_typeofcare                @"field_typeofcare"
+#define field_level_of_study               @"field_level_of_study"
+
+#define XCSRFToken                      @"X-CSRF-Token"
+#define imageTypeMedia                  @"data:image/png;base64,"
+#define vedioTypeMedia                  @"data:video/mp4;base64,"
+#define filetype                        @"filemime"
+#define qualifications                  @"Qualifications"
+#define seekerAvailableDates            @"field_available_dates"
+#define gender                          @"field_gender"
+#define subCategoriesKey                @"field_sub_typeofcare"
+#define activityKey                     @"field_activity"
+
+//--- API Keys ---
+#define keyfieldPrimaryEducation        @"field_primary_education"
+#define keyfieldSecondaryEducation      @"field_secondary_education"
+#define keyfieldTertiaryEducation       @"field_tertiary_education"
+#define keyfieldCommunityStudies        @"field_community_studies"
+#define keyfieldTechnicalCourse         @"field_technical_course"
+#define keyfieldLanguage                @"field_language"
+
+//--- Plist Keys ---
+#define keyPlistfieldPrimaryEducation        @"Primary Education"
+#define keyPlistfieldLanguage                @"Language"
+#define keyPlistfieldSecondaryEducation      @"Secondary Education"
+#define keyPlistfieldCommunityFamilyStudies  @"Community and Family Studies"
+#define keyPlistfieldTechnicalCourses        @"Technical courses"
+#define keyPlistfieldTertiaryEducation       @"Tertiary Education"
+#define keyPlistfieldOthers                         @"Others"
+
+//--- Comman Key ---
+#define userdata                        @"userdata"
+#define undefinekey                     @"und"
+#define valuekey                        @"value"
+
+//--- Searching Key ---
+#define searchDate                      @"field_available_dates"
+//--- New Param for Available Dates ----
+#define searchDateNewKey                 @"field_available_dates[value][date]"
+
+#define searchPostCode                  @"field_postcode"
+#define searchTime                      @"field_time"
+#define searchAge                       @"field_age"
+#define searchRate                      @"field_rate"
+#define searchPrimaryEducation          @"field_primary_education"
+#define searchSecondaryEducation        @"field_secondary_education"
+#define searchTertiaryEducation         @"field_tertiary_education"
+#define searchGender                    @"field_gender"
+#define searchExperience                @"field_experience"
+#define searchActivity                  @"field_activity"
+#define searchTypeofcare                @"field_typeofcare"
+#define searchSubTypeofcare             @"field_sub_typeofcare"
+#define searchLevelOfStudy               @"field_level_of_study"
+#define searchSubTypeofcares             @"field_sub_typeofcares"
+
+//--- Order Key ---
+#define selectedSubTypeofcare             @"field_sub_typeofcares"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Others</key>
+	<array>
+		<string>CPR Certification</string>
+		<string>First Aid Certification</string>
+		<string>Bachelor of Education in Early Childhood</string>
+		<string>Early Childhood Education</string>
+		<string>Certificate or Diploma in Children&apos;s Services</string>
+		<string>Certificate III and IV in Disability</string>
+		<string>Higher School Certificate</string>
+		<string>Victorian Certificate of Education/Victorian Certificate of Applied Learning</string>
+		<string>Queensland Certificate of Education</string>
+		<string>South Australian Certificate of Education</string>
+		<string>Western Australian Certificate of Education</string>
+		<string>Tasmanian Certificate of Education</string>
+		<string>Australian Capital Territory Year 12 Certificate</string>
+		<string>Northern Territory Certificate of Education</string>
+		<string>P1 Licence</string>
+		<string>P2 Licence</string>
+		<string>Full Licence</string>
+		<string>Accredited Tutor</string>
+		<string>Non-Smoker</string>
+		<string>Own Car</string>
+		<string>Parent/Client References</string>
+		<string>Housework Cleaning</string>
+		<string>Registered Carer</string>
+		<string>Professional Athlete</string>
+	</array>
+	<key>Primary Education</key>
+	<array>
+		<string>English</string>
+		<string>Mathematics</string>
+		<string>Music</string>
+		<string>Science</string>
+	</array>
+	<key>Language</key>
+	<array>
+		<string>English</string>
+		<string>Japanese</string>
+		<string>French</string>
+		<string>Italian</string>
+		<string>Mandarin</string>
+		<string>Spanish</string>
+		<string>German</string>
+	</array>
+	<key>Secondary Education</key>
+	<array>
+		<string>English (Standard)</string>
+		<string>English (Advanced)</string>
+		<string>Preliminary English Extension</string>
+		<string>HSC English Extension 1</string>
+		<string>HSC English Extension 2</string>
+		<string>Mathematics General</string>
+		<string>Mathematics</string>
+		<string>Mathematics Extension 1</string>
+		<string>Mathematics Extension 2</string>
+		<string>Biology</string>
+		<string>Chemistry</string>
+		<string>Earth and Environmental Science</string>
+		<string>Physics</string>
+		<string>Senior Science</string>
+		<string>Aboriginal Studies</string>
+		<string>Ancient History</string>
+		<string>Business Studies</string>
+		<string>Economics</string>
+		<string>Geography</string>
+		<string>HSC History Extension</string>
+		<string>Legal Studies</string>
+		<string>Modern History</string>
+		<string>Society and Culture</string>
+		<string>Studies of Religion I</string>
+		<string>Studies of Religion II</string>
+	</array>
+	<key>Community and Family Studies</key>
+	<array>
+		<string>Personal Development</string>
+		<string>Health and Physical Education</string>
+		<string>Dance</string>
+		<string>Drama</string>
+		<string>Music 1</string>
+		<string>Music 2</string>
+		<string>HSC Music Extension</string>
+		<string>Visual Arts</string>
+	</array>
+	<key>Technical courses</key>
+	<array>
+		<string>Agriculture</string>
+		<string>Design and Technology</string>
+		<string>Engineering Studies</string>
+		<string>Food Technology</string>
+		<string>Industrial Technology</string>
+		<string>Information Processes and Technology</string>
+		<string>Software Design and Development</string>
+		<string>Textiles and Design</string>
+	</array>
+	<key>Tertiary Education</key>
+	<array>
+		<string>Finance</string>
+		<string>Law</string>
+		<string>Accounting</string>
+		<string>Science</string>
+		<string>Medicine</string>
+		<string>History</string>
+	</array>
+</dict>
+</plist>
